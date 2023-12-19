@@ -1,0 +1,44 @@
+.task__add-wrap {
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: var(--sp-bt);
+}
+
+.task__add-title {
+    margin: 0;
+}
+
+.task__add-btn {
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.plus-svg path {
+    transition: 0.5s ease-in-out;
+}
+
+.task__add-btn__icon {
+    width: 34px;
+    height: 34px;
+}
+
+.task__add-btn__text {
+    margin: 0;
+}
+
+.task__add-btn:hover .plus-svg path {
+    stroke: var(--clr-purple);
+}
+
+@media screen and (max-width: 768px) {
+
+    .task__add-btn {
+        padding: 6px 12px;
+    }
+
+    .task__add-btn__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+}

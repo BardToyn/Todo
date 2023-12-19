@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Black.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Black.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Bold.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Bold.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Book.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Book.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-ExtraBold.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Light.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Medium.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Medium.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-SemiBold.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-SemiBold.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src:  url('../fonts/Cygre/Cygre-Thin.woff2') format('woff2'),
+          url('../fonts/Cygre/Cygre-Thin.woff') format('woff'),
+          url('../fonts/Cygre/Cygre-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --clr-white: #ffffff;
+    --clr-blue-white: #F1F5F9;
+    --clr-dark-blue: #212B36;
+    --clr-grey: #64748B;
+    --clr-purple: #3056D3;
+
+    --none: none;
+    --flex: flex;
+    --cntr: center;
+    --sp-bt: space-between;
+    --clmn: column;
+}
+
+body {
+    font-family: 'Cygre';
+    color: var(--clr-dark-blue);
+    background-color: var(--clr-blue-white);
+}
+
+h2 {
+    color: var(--clr-dark-blue);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+button {
+    padding: 12px 28px;
+    cursor: pointer;
+    color: var(--clr-white);
+    text-align: var(--cntr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 4px;
+    outline: var(--none);
+    border: var(--none);
+    transition: 0.5s ease-in-out;
+    background-color: var(--clr-purple);
+}
+
+button:hover {
+    outline: 1px solid var(--clr-purple);
+    color: var(--clr-purple);
+    background-color: var(--clr-white);
+}
+
+textarea {
+    resize: var(--none);
+    outline: var(--none);
+    border: var(--none);
+}
+
+input {
+    outline: var(--none);
+    border: var(--none);
+}
+
+.block {
+    padding: 22px 32px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+    background-color: var(--clr-white);
+}
+
+@media screen and (max-width: 768px) {
+    
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    
+    button {
+        font-size: 12px;
+    }
+
+    .block {
+        padding: 12px 22px;
+    }
+}

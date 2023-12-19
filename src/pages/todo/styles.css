@@ -1,0 +1,9 @@
+.pages__todo {
+    padding: 56px 82px;
+}
+
+@media screen and (max-width: 768px) {
+    .pages__todo {
+        padding: 5%;
+    }
+}

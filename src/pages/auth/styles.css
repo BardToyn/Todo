@@ -1,0 +1,161 @@
+.auth__pages {
+    height: 100vh;
+    display: var(--flex);
+    justify-content: var(--cntr);
+    align-items: var(--cntr);
+    background-color: var(--clr-blue-white);
+}
+
+.auth__pages-modal {
+    width: 1125px;
+    display: var(--flex);
+    border-radius: 8px;
+    box-shadow: drop-shadow(0px 8px 13px rgba(0, 0, 0, 0.07));
+    background-color: var(--clr-white);
+}
+
+.modal__wrap {
+    width: 50%;
+    padding: 72px;
+}
+
+.modal__info {
+    border-right: 1px solid var(--clr-blue-white);
+}
+
+.info__content {
+    display: var(--flex);
+    flex-direction: var(--clmn);
+    align-items: var(--cntr);
+    justify-content: var(--cntr);
+}
+
+.info__content-logo__wrap {
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.logo {
+    margin-right: 12px;
+    height: 58px;
+}
+
+.info__content-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--clr-dark-blue);
+}
+
+.info__content-subtitle {
+    text-align: var(--cntr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--clr-grey);
+}
+
+.info__content-img {
+    max-height: 268px;
+}
+
+.modal__auth-title {
+    margin-bottom: 34px;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    color: var(--clr-dark-blue);
+}
+
+.input__wrap {
+    display: var(--flex);
+    flex-direction: var(--clmn);
+}
+
+.input__wrap:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.input__wrap:last-child {
+    margin-top: 26px;
+}
+
+.input__label {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--clr-dark-blue);
+}
+
+.input {
+    padding: 16px 26px;
+    border-radius: 8px;
+    outline: var(--none);
+    border: 1px solid var(--clr-grey);
+}
+
+.input:active {
+    border: 1px solid var(--clr-purple);
+}
+
+.input:focus {
+    border: 1px solid var(--clr-purple);
+}
+
+.submit {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--clr-white);
+    background-color: var(--clr-purple);
+    padding: 16px;
+    border: var(--none);
+    outline: var(--none);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.submit:active {
+    color: var(--clr-white);
+    background-color: #001c78;
+}
+
+@media screen and (max-width: 768px) {
+
+    .modal__info {
+        display: var(--none);
+    }
+
+    .modal__wrap {
+        padding: 32px;
+        width: 100%;
+    }
+
+    .auth__pages-modal {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .modal__wrap {
+        padding: 22px;
+    }
+
+    .input {
+        width: 156px;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+}
