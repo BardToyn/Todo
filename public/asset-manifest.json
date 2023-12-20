@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ad7ca7e.css",
+    "main.js": "/static/js/main.ffc2b0a5.js",
+    "static/media/Cygre-Bold.woff2": "/static/media/Cygre-Bold.f8b5defccbff67a22f57.woff2",
+    "static/media/Cygre-ExtraBold.woff2": "/static/media/Cygre-ExtraBold.1c0dbe90ca1c40fefe4d.woff2",
+    "static/media/Cygre-Thin.woff2": "/static/media/Cygre-Thin.0d28c9028cce92fc4dfd.woff2",
+    "static/media/Cygre-Book.woff2": "/static/media/Cygre-Book.38e0883b1daaa150bc5d.woff2",
+    "static/media/Cygre-Medium.woff2": "/static/media/Cygre-Medium.40dac9efb7a30f208933.woff2",
+    "static/media/Cygre-SemiBold.woff2": "/static/media/Cygre-SemiBold.6fec0120cf0ced641c03.woff2",
+    "static/media/Cygre-Black.woff2": "/static/media/Cygre-Black.d4b9e7436e7d943b2731.woff2",
+    "static/media/Cygre-Light.woff2": "/static/media/Cygre-Light.e65d765667c15797553a.woff2",
+    "static/media/Cygre-Thin.ttf": "/static/media/Cygre-Thin.4c610baa82ef7286d55a.ttf",
+    "static/media/Cygre-ExtraBold.ttf": "/static/media/Cygre-ExtraBold.7d0c2eb01221c8e473fa.ttf",
+    "static/media/Cygre-Book.ttf": "/static/media/Cygre-Book.c93dedfb1b4ea39eb04e.ttf",
+    "static/media/Cygre-Medium.ttf": "/static/media/Cygre-Medium.583f3f9e1de44f08f272.ttf",
+    "static/media/Cygre-Bold.ttf": "/static/media/Cygre-Bold.cb654952f20adba699b6.ttf",
+    "static/media/Cygre-SemiBold.ttf": "/static/media/Cygre-SemiBold.b3c6389f4e690c32760c.ttf",
+    "static/media/Cygre-Black.ttf": "/static/media/Cygre-Black.0074472deed18d7bc581.ttf",
+    "static/media/Cygre-Light.ttf": "/static/media/Cygre-Light.775c9598f223fcf81328.ttf",
+    "static/media/Cygre-Bold.woff": "/static/media/Cygre-Bold.3718c52668eac59dab0f.woff",
+    "static/media/Cygre-Thin.woff": "/static/media/Cygre-Thin.2c6467f62dd91111cf07.woff",
+    "static/media/Cygre-Medium.woff": "/static/media/Cygre-Medium.42386556258f8df55340.woff",
+    "static/media/Cygre-Book.woff": "/static/media/Cygre-Book.2a9c75a074554413b3cf.woff",
+    "static/media/Cygre-SemiBold.woff": "/static/media/Cygre-SemiBold.51030171dd2121ecc8da.woff",
+    "static/media/Cygre-Black.woff": "/static/media/Cygre-Black.b3121b727d2b17976d7c.woff",
+    "static/media/undraw_access_account.svg": "/static/media/undraw_access_account.374c3b4d728020bcc9739b207180ce21.svg",
+    "index.html": "/index.html",
+    "static/media/logo.svg": "/static/media/logo.7ce850806468bc843bb30eecd9179da0.svg",
+    "main.1ad7ca7e.css.map": "/static/css/main.1ad7ca7e.css.map",
+    "main.ffc2b0a5.js.map": "/static/js/main.ffc2b0a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ad7ca7e.css",
+    "static/js/main.ffc2b0a5.js"
+  ]
+}

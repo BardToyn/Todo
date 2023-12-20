@@ -1,13 +1,45 @@
-import React from 'react';
-
+// Auth.js
+import React, { useState } from 'react';
 import LoginForm from './Form';
+import { authenticateUser } from '../../settings/auth'; 
+
+import { useNavigate } from 'react-router-dom'; // Импортируем хук для навигации
 
 import './styles.css';
 
-import logo from '../../images/logo.svg'
-import undraw from '../../images/undraw_access_account.svg'
+import logo from '../../images/logo.svg';
+import undraw from '../../images/undraw_access_account.svg';
 
-const Auth = () => {
+const Auth = ({ onLogin }) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate(); // Инициализируем хук навигации
+
+  const handleLoginSubmit = async (login, password) => {
+    try {
+      if (!login || !password) {
+        console.error('Email and password are required.');
+        return;
+      }
+
+      // Вызываем функцию аутентификации
+      const isAuthenticated = await authenticateUser(login, password);
+
+      // Если аутентификация успешна, устанавливаем флаг isAuthenticated в true
+      if (isAuthenticated) {
+        setIsAuthenticated(true);
+
+        // Перенаправляем на страницу Todo
+        navigate('/todo');
+      } else {
+        // В противном случае, можно обработать сценарий неудачной аутентификации
+        console.log('Authentication failed. Invalid username or password.');
+      }
+    } catch (error) {
+      // Обработка ошибок аутентификации
+      console.error('Error during authentication:', error.message);
+    }
+  };
+
   return (
     <div className='auth__pages'>
       <div className='auth__pages-modal'>
@@ -29,7 +61,8 @@ const Auth = () => {
           <h2 className='modal__auth-title'>
             Вход в BrandAdmin
           </h2>
-          <LoginForm />
+          {/* Передаем функцию handleLoginSubmit в LoginForm */}
+          <LoginForm onSubmit={handleLoginSubmit} />
         </section>
       </div>
     </div>

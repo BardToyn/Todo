@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const LoginForm = () => {
+const LoginForm = ({ onSubmit }) => {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
 
@@ -14,8 +14,11 @@ const LoginForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Здесь вы можете выполнить необходимую логику для обработки отправки формы, например, авторизацию.
-    console.log('Submitted:', { login, password });
+
+    // Передаем логин и пароль в родительский компонент (Auth)
+    if (onSubmit) {
+      onSubmit(login, password);
+    }
   };
 
   return (
